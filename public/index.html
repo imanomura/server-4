@@ -26,7 +26,7 @@
           const res = await fetch('/api');
           // const res = await fetch('https://randomuser.me/api/');
           this.data = await res.json();
-          console.log(this.data.data.message);
+          console.log(this.data.data.results[0]);
         }
       };
     }
