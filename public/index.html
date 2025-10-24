@@ -24,8 +24,9 @@
         async getData() {
           // 自前のAPサーバーからfetchしてみる
           const res = await fetch('/api');
+          // const res = await fetch('https://randomuser.me/api/');
           this.data = await res.json();
-          console.log(this.data.message);
+          console.log(this.data.data.message);
         }
       };
     }
